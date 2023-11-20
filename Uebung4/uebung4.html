@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+    <title>Uebung 4</title>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Teilnehmerin Registrierung</h1> 
+        <div class="row">
+            <div class="my-3  col-12 col-sm-6 col-md-4 col-lg-3">
+                <input class="form-control " type="text"
+                placeholder="first name" id="first"/>
+            </div>
+    </div>
+    <div class="my-3  col-12 col-sm-6 col-md-4 col-lg-3">
+    <input class="my-3 col-12 col-sm-6" type="text"
+       placeholder="last name" id="last"/>
+    </div>
+
+    <div class="my-3  col-12 col-sm-6">
+       <input class="my-3  col-12 col-6" type="email/"
+       placeholder="email" id="first"/>
+    </div>
+    
+    <input class="my-3 col-12 col-sm-6" type="text"
+       placeholder="Ipaddr" id="ipaddr" />
+    </div>
+    <div class="my-3  col-12 col-sm-6 col-md-4">
+
+
+    </div>
+    </div >
+    <script>
+        function registerart() {
+            console.log("Regesterinen geklickt") ;
+            let firstInput
+            let firstValue = document.getElementById(first).
+            value;
+            let lastValue = document.querySelector('#lasst').
+            value;
+            let emailValue = document.querySelector('#email').
+            value;
+            let ipaddrValue = document.querySelector('#IPaddr').
+            value;
+            console.log('firstValue :', firstValue)
+            console.log('lastValue :', lastValue)
+            console.log('emailtValue :', emailValue)
+            console.log('ipaddrtValue :', ipaddrValue) 
+               }
+               if(firstValue == "") {
+                firstInput.classList.remove('is-Valid')
+                firstInput.classList.add('is-invalid')
+               } else {
+                firstInput.classList.remove('is-invalid')
+                firstInput.classList.add(is-valid)
+               }
+
+               let output = document.getElementById('output');
+               output.innerHTML =`
+               <ul>
+                <li>${firstValue}</li>
+                <li>${lastValue}</li>
+                <li>${emailValue}</li>
+                <li>${ipaddrValue}</li>
+
+                </ul>
+               ´;
+               
+    </script>
+    </div>
+    
+</body>
+</html>
